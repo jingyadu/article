@@ -1,0 +1,63 @@
+body{backgroud-color:#f4f4f4;
+    color: #555;}
+article{
+    width:760px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+}
+/*header*/
+header {
+    text-align: center;
+    line-height: 50px;
+    border-bottom:1px dashed #DDD;
+   }
+header h2{
+    font-size: 20px;
+}
+header h3{
+    font-size: 18px;
+    color: orange;
+}
+/*section*/
+section h4{
+    color: green;
+    font-size: 16px;
+    line-height: 35px;
+}
+section p{
+    text-indent: 2em;
+    font-size: 14px;
+    line-height: 35px;
+}
+section figure{
+    float: left;
+    width: 300px;
+    margin: 10px 20px 0 0;
+}
+section figure img{
+     height: 184px;
+}
+section figure figcaption{
+    line-height: 20px;
+    display: -webkit-box;/*弹性盒模型*/
+    -webkit-box-orient: vertical;/*控制子元素垂直排列*/
+    -webkit-line-clamp:4;/*文字显示的行数*/
+    overflow: hidden;/*溢出隐藏*/
+}
+section h5{
+    color: orange;
+    font-size: 14px;
+    line-height: 35px;
+}
+.img1{
+    float: right;
+    margin: 10px 0 0 20px;
+}
+/*媒体查询*/
+@media all and (max-width: 640px){
+    article{width: 100%; box-sizing: border-box}
+    section figure{ width: 100%;}
+    section img{ width: 100%;}
+    .img1{float:none; width: 100%;margin: 10px 0 0 0}
+}
